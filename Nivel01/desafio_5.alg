@@ -15,7 +15,7 @@ inicio
     leia(idade)
     escreva("Digite o valor da bolsa (R$): ")
     leia(vlbolsa)
-    escreva("Você tem experiência? (true/false): ")
+    escreva("Você tem experiência? (1- verdadeiro 0- falso): ")
     leia(experiencia)
 
     escreval("________________________________________")

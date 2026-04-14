@@ -25,6 +25,8 @@ inicio
         fimse
     fimpara
 
+
+
     escreval("Erro: Acesso bloqueado.")
 
 fimalgoritmo

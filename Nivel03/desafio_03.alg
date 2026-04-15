@@ -2,8 +2,8 @@ algoritmo "Sistema de Login"
 
 var
     usuario,senha: caractere
-    i: inteiro
     tentativa: inteiro
+    verifica: caractere
 
 inicio
     escreval("----------------------------------")
@@ -11,28 +11,29 @@ inicio
     escreval("----------------------------------")
 
     tentativa <- 0
+    verifica <- "N"
 
-    para i de 1 ate 3 faca
-        
+    repita
         escreva("Digite o nome de usuário: ")
         leia(usuario)
         
         escreva("Digite a senha: ")
         leia(senha)
         
-        se (usuario = "admin" e senha = "senai123") entao
+        se (usuario = "admin" e senha = "123") entao
             escreva("Login bem-sucedido!")
-            interrompa
+             verifica <- "S"
         senao
             escreval("Erro: Credenciais inválidas. Tente novamente.")
             tentativa <- tentativa + 1
-        fimse
-    fimpara
+        fimse        
+        
+    Ate (verifica = "S" ou tentativa > 3)
 
-    se (tentativa >=3) entao
-        escreval("Erro: Acesso bloqueado.")
-    senao
+    se (verifica = "S") entao
         escreval("Segunda etapa liberada")
+    senao
+        escreval("Erro: Acesso bloqueado.")
     fimse
 
     

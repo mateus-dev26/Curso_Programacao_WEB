@@ -16,7 +16,7 @@ para i de 1 ate 3 faca
     
     se (usuario = "admin") entao
         escreval ("Login realizado com sucesso!")
-        interrompa
+        
     fimse
 
     escreval ("Senha incorreta. Tente novamente! ")

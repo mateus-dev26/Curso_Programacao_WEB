@@ -3,11 +3,14 @@ algoritmo "Sistema de Login"
 var
     usuario,senha: caractere
     i: inteiro
+    tentativa: inteiro
 
 inicio
     escreval("----------------------------------")
     escreval("        TELA DE LOGIN        ")    
     escreval("----------------------------------")
+
+    tentativa <- 0
 
     para i de 1 ate 3 faca
         
@@ -22,11 +25,16 @@ inicio
             interrompa
         senao
             escreval("Erro: Credenciais inválidas. Tente novamente.")
+            tentativa <- tentativa + 1
         fimse
     fimpara
 
+    se (tentativa >=3) entao
+        escreval("Erro: Acesso bloqueado.")
+    senao
+        escreval("Segunda etapa liberada")
+    fimse
 
-
-    escreval("Erro: Acesso bloqueado.")
+    
 
 fimalgoritmo

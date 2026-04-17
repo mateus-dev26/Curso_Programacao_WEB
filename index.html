@@ -1,0 +1,120 @@
+<!--Declara que o ficheiro é um documento HTML-->
+<!DOCTYPE html>
+
+<!--Inicia o código html e define o idioma da página-->
+<html lang="pt-br">
+
+<!--A tag HEAD(cabeça) guarda as configurações invisíveis os METADADOS-->
+<head>
+
+    <!--Aceita as entradas do teclado com acentuações, etc-->
+    <meta charset="UTF-8">
+
+    <!--Faz com que a página fique responsiva, isso é, fique nos padrões idependente do dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Descrição do site e caracteristicas resumidas para que a IA buscar o meu site-->
+    <meta name="description" content="Teste para Programadores" >
+
+    <!--Autor do Site-->
+    <meta name="author" content="Mateus_Vitor">
+
+    <!--Palavras Chaves-->
+    <meta name="keywords" content="aula, web, programadores, iniciantes">
+
+    <!--Título que aparecerá na aba-->
+    <title>Quiz para Programadores</title>
+
+<!--Fechamento obrigatório da tag HEAD(cabeça)-->
+</head>
+
+<!--Inicio da tag body(corpo), onde apareceram as informações na tela do usuário-->
+<body>
+
+    <!--Cabeçalho da página-->
+    <header>
+
+        <!--Como boa prática é recomedavel apenas um H1 por página-->
+        <h1>Quiz para Programadores</h1>
+        
+        <!--Parágrafo de descrição-->
+        <p>Teste seus conhecimentos em programação e veja se está preparado
+        <!--Fechamento do primeiro parágrafo -->   
+        </p>
+
+    <!--Fechamento da tag header(cabeçalho)-->
+    </header>
+
+    <!--Corpo da página-->
+    <main>
+
+        <!--Abertura de uma sessão que delimita parte específicas de qualquer parte da página-->
+        <section>
+            <h2>Detalhamento do Quiz</h2>
+            <p>Este teste foi desenvolvido para treinar seus conhecimentos em todo âmbito da <strong>programação do básico ao intermediário</strong>. <br><br> Você encontrara diferentes tipos de perguntas estruturadas em diversas maneiras, tais como <u>multipla escolha, datas, imagem, etc.</u> <br><br>Você também pode encontrar alguns acrônimos como <abbr title="HyperText Markup Language (Linguagem de Marcação HiperTexto)">HTML</abbr>e <abbr title="Cascading Style Sheets (Folhas em estilo cascata)">CSS</abbr> que são comumente usados em questões relacionadas ao <em>Desenvolvimento WEB</em>.<br><br> <b><u>Boa Sorte!!</u></b> </p>
+
+            <!--Propriedades de parágrafos (textos):
+                <strong> -- Dá forte importancia ao texto.
+                <em> -- Dá ênfase no texto escolhido, na hierarquia abaixo do "Strong".
+                <br> -- Quebra de linha
+                <abbr> -- Cria uma abreviação explicativa ao passar o mouse.
+                <b> -- Negrito
+                <i> -- Itálico
+                <u> -- Sublinhado
+            -->
+        <!--Fechamento da tag "section"-->
+        </section>
+
+        <!--INICIO DAS QUESTÕES-->
+
+        <!--Questão 1-->
+        <section>
+            <h3>Questão 1: Qual linguagem é utilizada para estruturar páginas na WEB? </h3>
+
+            <!--A tag FORM é uma das mais importantes de qualquer forma de interação WEB. Ela é o "envelope" que agrupa os campos de entrada (inputs) e define para onde e como os dados preenchidos pelo usuário serão enviados no servidor   -->
+            <form>
+
+                <!--Essas linhas de input representa o link com a lógica a ser implementada no backend-->
+                <input type="radio" value="Python" id="q1a" name="pergunta1"> 
+                
+                <!--Nome descrito no input não aparece para o usuário, precisa adicionar um linha com a tag "label"-->
+                <label for="q1a">Python<br></label>
+
+                <!--Essas linhas de input representa o link com a lógica a ser implementada no backend-->
+                <input type="radio" value="HTML" id="q1b" name="pergunta1">
+
+                <!--Nome descrito no input não aparece para o usuário, precisa adicionar um linha com a tag "label"-->
+                <label for="q1b">HTML<br></label>
+
+                <!--Essas linhas de input representa o link com a lógica a ser implementada no backend-->
+                <input type="radio" value="C++" id="q1c" name="pergunta1">
+
+                <!--Nome descrito no input não aparece para o usuário, precisa adicionar um linha com a tag "label"-->
+                <label for="q1c">C++<br></label>
+
+                <!--Essas linhas de input representa o link com a lógica a ser implementada no backend-->
+                <input type="radio" value="JavaScript" id="q1d" name="pergunta1">
+
+                <!--Nome descrito no input não aparece para o usuário, precisa adicionar um linha com a tag "label"-->
+                <label for="q1d">JavaScript<br></label>
+
+            <!--Fechamento da tag "Form"-->
+            </form>
+            
+        <!--Fechamento da tag "section"-->
+        </section>
+
+
+    <!--Fechamento da tag "main"-->    
+    </main>
+
+    <!--Rodapé da página-->
+    <footer>
+
+    <!--Fechamento da tag "footer"(rodapé)-->   
+    </footer>
+    
+<!--Fechamento obrigatório da tag "body"(corpo)-->    
+</body>
+<!--Fechamento obrigatório da página-->
+</html>

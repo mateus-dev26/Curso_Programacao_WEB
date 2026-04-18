@@ -29,13 +29,13 @@
 </head>
 
 <!--Inicio da tag body(corpo), onde apareceram as informações na tela do usuário-->
-<body>
+<body style="background-color: #b8b8b8;">
 
     <!--Cabeçalho da página-->
     <header>
 
         <!--Como boa prática é recomedavel apenas um H1 por página-->
-        <h1>Quiz para Programadores</h1>
+        <h1 style="box-shadow: 1px 1px 2px black; width: 370px;">Quiz para Programadores</h1>
         
         <!--Parágrafo de descrição-->
         <p>Teste seus conhecimentos em programação e veja se está preparado
@@ -43,7 +43,7 @@
         </p>
 
     <!--Fechamento da tag header(cabeçalho)-->
-    </header>
+    </header><hr>
 
     <!--Corpo da página-->
     <main>
@@ -61,9 +61,13 @@
                 <b> -- Negrito
                 <i> -- Itálico
                 <u> -- Sublinhado
+                <hr> -- adiciona uma linha divisória
+                <small> -- diminue ligeiramente o foco de um determinado techo
+                <sup> -- Elevado (expoente)
+                <sub> -- Abaixo 
             -->
         <!--Fechamento da tag "section"-->
-        </section>
+        </section><hr>
 
         <!--INICIO DAS QUESTÕES-->
 
@@ -74,7 +78,7 @@
             <!--A tag FORM é uma das mais importantes de qualquer forma de interação WEB. Ela é o "envelope" que agrupa os campos de entrada (inputs) e define para onde e como os dados preenchidos pelo usuário serão enviados no servidor   -->
             <form>
 
-                <!--Essas linhas de input representa o link com a lógica a ser implementada no backend-->
+                <!--Essas linhas de input(leia do VisualG) representa o link com a lógica a ser implementada no backend-->
                 <input type="radio" value="Python" id="q1a" name="pergunta1"> 
                 
                 <!--Nome descrito no input não aparece para o usuário, precisa adicionar um linha com a tag "label"-->
@@ -102,8 +106,126 @@
             </form>
             
         <!--Fechamento da tag "section"-->
-        </section>
+        </section><hr>
 
+        <!--Questão 2: Texto-->
+        <section>
+            <h3>Questão 2: Na URL HTPPS://www.google.com, o trecho "google.com" é conhecido como: </h3>
+            <form>
+            
+            <label for="q2">Resposta:</label>
+            <!-- Quando o "type" é "text" você não precisa colocar o "value" -->
+            <!-- DICA "placeholder" pode ser o "label" do "text" -->
+            <input type="text" id="q2" name="pergunta2" placeholder="Digite aqui" size="30" />
+            
+            </form>
+        </section><hr>
+
+        <!--Questão 3: Senha-->
+        <section>
+            <h3>Questão 3: Escreva um exemplo de senha segura: </h3>
+            <form>
+            
+            <label for="q3">Resposta:</label>
+            <!-- Quando o "type" é "text" você não precisa colocar o "value" -->
+            <!-- DICA "placeholder" pode ser o "label" do "text" -->
+            <input type="password" id="q3" name="pergunta3" placeholder="Digite aqui" />
+            
+            </form>
+        </section><hr>
+
+        <!--Questão 4: Data-->
+        <section>
+            <h3>Questão 4: Em que ano o HTML foi lançado? </h3>
+            <form>
+            
+            <label for="q4">Resposta:</label>
+            <!-- Quando o "type" é "text" você não precisa colocar o "value" -->
+            <!-- DICA "placeholder" pode ser o "label" do "text" -->
+            <input type="date" id="q4" name="pergunta4" />
+            
+            </form>
+        </section><hr>
+
+        <!--Questão 5: Seleção Multipla(CheckBox)-->
+        <section>
+            <h3>Questão 5: Quais dessas tecnologias é consideradas Linguagem de Programação? </h3>
+            <form>
+            
+            <!-- Quando o "type" é "text" você não precisa colocar o "value" -->
+            <!-- DICA "placeholder" pode ser o "label" do "text" -->
+            
+            <input type="checkbox" id="q5a" name="pergunta5" value="HTML"/>
+            <label for="q5a">HTML<br></label>
+
+            <input type="checkbox" id="q5b" name="pergunta5" value="C++"/>
+            <label for="q5b">C++<br></label>
+
+            <input type="checkbox" id="q5c" name="pergunta5" value="JavaScript"/>
+            <label for="q5c">JavaScript<br></label>
+
+            <input type="checkbox" id="q5d" name="pergunta5" value="Python"/>
+            <label for="q5d">Python<br></label>
+            
+            </form>
+        </section><hr>
+
+        <!--Questão 6: Upload de arquivo-->
+        <section>
+            <h3>Questão 6: Faça o upload de um arquivo que contenha o código HTML? </h3>
+            <form>
+            
+            <!-- Quando o "type" é "file" você não precisa colocar o "value" -->
+            <!-- DICA "placeholder" pode ser o "label" do "text" -->
+            <!-- <label for="q6">Adicione o arquivo:<br></label> -->
+            <input type="file" id="q6" name="pergunta6"/>
+            
+            
+            </form>
+        </section><hr>
+
+        <!--Questão 7: Menu Suspenso-->
+        <section>
+            <h3>Questão 7: Selecione o Atributo do "input" que defina o seu tipo: </h3>
+            <form>
+            
+            <!-- Quando o "type" é "file" você não precisa colocar o "value" -->
+            <!-- DICA "placeholder" pode ser o "label" do "text" -->
+            <!-- <label for="q6">Adicione o arquivo:<br></label> -->
+            <select id="p7" name="pergunta7">
+                <option value="vazio">Selecione...</option>
+                <option value="id">ID</option>
+                <option value="class">CLASS</option>
+                <option value="type">TYPE</option>
+                <option value="name">NAME</option>
+                <option value="placeholder">PLACEHOLDER</option>
+            </select>
+
+            <!--Questão 8: Adicionar Imagem-->
+        <section>
+            <h3>Questão 8: Qual linguagem de programação é representada pela logotipo abaixo: </h3>
+
+            <figure>
+                <img src="/assets/java.png" width="300px" alt="Imagem do logotipo da imagem de programação que tem um xícara.">
+                <figcaption style="text-align: right; width: 550px;">Figura 1 - Logotipo da Linguagem de Programação</figcaption>
+            </figure>
+            <form>
+                <h4>Selecione a alternativa correta: <br></h4>
+                <input type="radio" id="p8a" name="pergunta8" value="php">
+                <label for="q8a">PHP</label>
+
+                <input type="radio" id="p8b" name="pergunta8" value="html">
+                <label for="q8b">HTML</label>
+
+                <input type="radio" id="p8c" name="pergunta8" value="JavaScript">
+                <label for="q8c">JavaScript</label>
+
+                <input type="radio" id="p8d" name="pergunta8" value="C++">
+                <label for="q8d">C++</label>
+
+
+            </form>
+        </section><hr>
 
     <!--Fechamento da tag "main"-->    
     </main>

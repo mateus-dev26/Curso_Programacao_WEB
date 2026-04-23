@@ -35,7 +35,7 @@
     <header>
 
         <!--Como boa prática é recomedavel apenas um H1 por página-->
-        <h1 style="box-shadow: 1px 1px 2px black; width: 370px;">Quiz para Programadores</h1>
+        <h1 style="box-shadow: 1px 1px 3px black; width: 360px; background-color: rgba(247, 78, 78, 0.144); padding: 7px;">Quiz para Programadores</h1>
         
         <!--Parágrafo de descrição-->
         <p>Teste seus conhecimentos em programação e veja se está preparado
@@ -200,7 +200,8 @@
                 <option value="name">NAME</option>
                 <option value="placeholder">PLACEHOLDER</option>
             </select>
-
+            </form>
+        </section>
             <!--Questão 8: Adicionar Imagem-->
         <section>
             <h3>Questão 8: Qual linguagem de programação é representada pela logotipo abaixo: </h3>
@@ -227,12 +228,97 @@
             </form>
         </section><hr>
 
+
+        <!--Tabela de Pontuação-->
+        <section> 
+
+            <h3>Tabela de Pontuação</h3>
+
+            <tbody>
+            <!--Monta a estrutura de uma tabela-->
+            <table border="1">
+                <thead>
+                    <tr>
+                        <!--A tag TH (table header) cabeçalho da tabela. Coloca em negrito-->
+                        <th> Pontuação</th><th> Descrição</th>
+                    </tr>
+                </thead>
+                <!--A tag TR (table row). Linha da tabela  -->
+                <tr>
+                    <!--A tag TD (table date), divide em colunas -->
+                    <td>0 - 2</td><td> Não foi bem! Tente novamente...</td>
+                </tr>
+                <tr>
+                    <td>3 - 4</td><td> Precisa melhorar muito ainda...</td>
+                </tr>
+                <tr>
+                    <td>5 - 6</td><td> Regular, mas ainda não foi suficiente!</td>
+                </tr>
+                <tr>
+                    <td>7 - 8</td><td> Muito bom! Está atendendo os requisitos.</td>
+                </tr>
+                <tr>
+                    <td>9 - 10</td><td> Parabéns! Atingiu o nível de especialista.</td>
+                </tr>
+
+                <!--Rodapé da tabela-->
+                <tfoot>
+                    <!--A tag TH (table header) cabeçalho da tabela. Coloca em negrito-->
+                    <th colspan="2"> Boa sorte Programador!!</th>
+                    
+                </tfoot>
+
+            </table>
+            </tbody><br>
+
+        </section><hr>
+        
+        <!--Lista de Resposta-->
+        <section>
+            <h3> Verifique as respostas</h3>
+
+            <!--Como na tabela, para trabalhar com listas primeiramente precisa informar a intenção atrés da tag UL
+            UL - Habilita lista não ordenada
+            OL - Lista organizada(numerada)
+            LI - lista de pontos
+            -->
+            <details>
+                <summary>Clique para verificar as respostas.</summary>
+            <ol>
+                <li>HTML</li>
+                <li>Domínio</li>
+                <li>Ab3@_lkRt12</li>
+                <li>6 de agosto de 1991</li>
+                <li>JavaScript, Java, Python, C++ </li>
+                <li>*.html</li>
+                <li>type</li>
+                <li>JavaScript</li>
+            </ol>
+            </details>
+        </section>
+        <br><br><br>
+        <!--Formulário feedback-->
+        <section>
+            <form>
+                <!--Tag Fildset é usada para agrupar logicamente campos relacionados dentro de um formulário, criando uma borda visual ao redor deles.-->
+                <fieldset>
+                    <legend><b>Informações de contato: </b></legend>
+                    <label for="feed_name">Informe seu nome: </label>
+                    <input type="text" id="fnome" name="feed_name" placeholder="Digite aqui..."><br><br>
+                    <label for="feed_email">Informe seu email: </label>
+                    <input type="email" id="femail" name="feed_email" placeholder="Digite aqui..."><br><br>
+                    <label for="comentario"><b>Comentários:</b></label><br>
+                    <textarea name="comentario" id="cmt" placeholder="Seu comentário aqui..." rows="4" cols="50"></textarea>
+                </fieldset>
+            </form>
+        </section>
+
     <!--Fechamento da tag "main"-->    
     </main>
-
+<br><br>
     <!--Rodapé da página-->
-    <footer>
-
+    <footer style="text-align: right;">
+        <a href="/Pages/page1.html" target="_blank" >PÁGINA 2</a>
     <!--Fechamento da tag "footer"(rodapé)-->   
     </footer>
     

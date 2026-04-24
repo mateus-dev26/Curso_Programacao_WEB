@@ -1,6 +1,6 @@
 
 body {
-    background-color: #b8b8b8;
+    background-image: url(/assets/fundo);
     text-align: justify;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -15,7 +15,7 @@ header#cabecalho h1 {
     box-shadow: 0.1rem 0.1rem 0.3rem black;
     width: 17rem;
     text-align: center;
-    background-color: rgba(243, 242, 242, 0.658);
+    background-color: rgba(243, 242, 242, 0.781);
     padding: 7px;
     margin-top: -10px;
     border-radius: 1rem;
@@ -36,25 +36,32 @@ section h2 {
     box-shadow: 0.1rem 0.1rem 0.3rem black;
     width: 49rem;
     text-align: left;
-    background-color: rgba(243, 242, 242, 0.658);
-    padding: 0.2rem;
+    background-color: rgba(243, 242, 242, 0.781);
+    padding: 0.3rem;
 }
 
 section h3 {
     box-shadow: 0.1rem 0.1rem 0.3rem black;
     width: 49rem;
     text-align: left;
-    background-color: rgba(243, 242, 242, 0.658);
-    padding: 0.2rem;
-    gap
+    background-color: rgba(243, 242, 242, 0.781);
+    padding: 0.3rem;
+    
 }
 
 header#cabecalho p {
-    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top: 0.8rem;
+    left: 19rem;
+    width: 30rem;
+    height: 1.2rem;
+    background-color: #00000070;
     font-size: 10pt;
-    text-align: right;
+    text-align: center;
     margin-right: 1rem;
-    color: rgb(0, 0, 0);
+    color: #09fa01ee;
+    padding: 0.1rem;
 }
 
 
@@ -80,7 +87,7 @@ article {
     padding: 20px;
     width: 50rem;
     left: 25rem;
-    background-color: #f80b0b3b ;
+    background-color: #f80b0b77 ;
     box-shadow: 1px 1px 3px black;
     border-radius: 0.5rem;
 }

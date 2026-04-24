@@ -1,0 +1,117 @@
+
+body {
+    background-color: #b8b8b8;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+body h3 {
+    font-weight: bold;
+}
+
+
+header#cabecalho h1 {
+    box-shadow: 0.1rem 0.1rem 0.3rem black;
+    width: 17rem;
+    text-align: center;
+    background-color: rgba(243, 242, 242, 0.658);
+    padding: 7px;
+    margin-top: -10px;
+    border-radius: 1rem;
+    position: relative;
+    left: 15rem;
+    font-size: 20pt;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+section {
+    margin-top: 2rem;
+}
+section.introducao p{
+    padding: 1rem;
+    text-align: justify;
+    font-size: 11pt;
+}
+section h2 {
+    box-shadow: 0.1rem 0.1rem 0.3rem black;
+    width: 49rem;
+    text-align: left;
+    background-color: rgba(243, 242, 242, 0.658);
+    padding: 0.2rem;
+}
+
+section h3 {
+    box-shadow: 0.1rem 0.1rem 0.3rem black;
+    width: 49rem;
+    text-align: left;
+    background-color: rgba(243, 242, 242, 0.658);
+    padding: 0.2rem;
+    gap
+}
+
+header#cabecalho p {
+    font-weight: bolder;
+    font-size: 10pt;
+    text-align: right;
+    margin-right: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+
+table {
+    background-color: #ffff;
+    position: relative;
+    left: 12rem;
+    border-collapse: collapse;
+    padding: 1rem;
+
+    
+}
+table, th, td {
+    border: 0.1rem solid black;
+    padding: 0.3rem;
+}
+table tfoot{
+    text-align: center;
+}
+
+article {
+    position: relative;
+    padding: 20px;
+    width: 50rem;
+    left: 25rem;
+    background-color: #f80b0b3b ;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 0.5rem;
+}
+
+
+
+header#cabecalho {
+    text-align: left;
+}
+
+fieldset {
+    background-color: rgba(243, 242, 242, 0.185);
+}
+
+footer {
+    text-align: right;
+}
+
+figcaption {
+    text-align: right;
+    width: 46rem;
+    font-size: 10pt;
+    margin-top: 1rem;
+}
+
+figure#img_q8 img {
+    width: 300px;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem black;
+    padding: 1rem;
+    position: relative;
+    left: 10rem;
+    background-color: #ffff;
+}

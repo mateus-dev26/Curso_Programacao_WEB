@@ -25,20 +25,23 @@
     <!--Título que aparecerá na aba-->
     <title>Quiz para Programadores</title>
 
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+
 <!--Fechamento obrigatório da tag HEAD(cabeça)-->
 </head>
 
 <!--Inicio da tag body(corpo), onde apareceram as informações na tela do usuário-->
-<body style="background-color: #b8b8b8;">
+<body>
+    <article>
 
     <!--Cabeçalho da página-->
-    <header>
+    <header id="cabecalho">
 
         <!--Como boa prática é recomedavel apenas um H1 por página-->
-        <h1 style="box-shadow: 1px 1px 3px black; width: 360px; background-color: rgba(247, 78, 78, 0.144); padding: 7px;">Quiz para Programadores</h1>
+        <h1>Quiz para Programadores</h1>
         
         <!--Parágrafo de descrição-->
-        <p>Teste seus conhecimentos em programação e veja se está preparado
+        <p>Teste seus conhecimentos em programação e veja se está preparado!!
         <!--Fechamento do primeiro parágrafo -->   
         </p>
 
@@ -49,7 +52,7 @@
     <main>
 
         <!--Abertura de uma sessão que delimita parte específicas de qualquer parte da página-->
-        <section>
+        <section class="introducao">
             <h2>Detalhamento do Quiz</h2>
             <p>Este teste foi desenvolvido para treinar seus conhecimentos em todo âmbito da <strong>programação do básico ao intermediário</strong>. <br><br> Você encontrara diferentes tipos de perguntas estruturadas em diversas maneiras, tais como <u>multipla escolha, datas, imagem, etc.</u> <br><br>Você também pode encontrar alguns acrônimos como <abbr title="HyperText Markup Language (Linguagem de Marcação HiperTexto)">HTML</abbr>e <abbr title="Cascading Style Sheets (Folhas em estilo cascata)">CSS</abbr> que são comumente usados em questões relacionadas ao <em>Desenvolvimento WEB</em>.<br><br> <b><u>Boa Sorte!!</u></b> </p>
 
@@ -201,14 +204,14 @@
                 <option value="placeholder">PLACEHOLDER</option>
             </select>
             </form>
-        </section>
+        </section><hr>
             <!--Questão 8: Adicionar Imagem-->
         <section>
             <h3>Questão 8: Qual linguagem de programação é representada pela logotipo abaixo: </h3>
 
-            <figure>
-                <img src="/assets/java.png" width="300px" alt="Imagem do logotipo da imagem de programação que tem um xícara.">
-                <figcaption style="text-align: right; width: 550px;">Figura 1 - Logotipo da Linguagem de Programação</figcaption>
+            <figure id="img_q8">
+                <img src="/assets/java.png" alt="Imagem do logotipo da imagem de programação que tem um xícara.">
+                <figcaption>Figura 1 - Logotipo da Linguagem de Programação</figcaption>
             </figure>
             <form>
                 <h4>Selecione a alternativa correta: <br></h4>
@@ -236,7 +239,7 @@
 
             <tbody>
             <!--Monta a estrutura de uma tabela-->
-            <table border="1">
+            <table>
                 <thead>
                     <tr>
                         <!--A tag TH (table header) cabeçalho da tabela. Coloca em negrito-->
@@ -316,8 +319,9 @@
     <!--Fechamento da tag "main"-->    
     </main>
 <br><br>
+    </article>
     <!--Rodapé da página-->
-    <footer style="text-align: right;">
+    <footer>
         <a href="/Pages/page1.html" target="_blank" >PÁGINA 2</a>
     <!--Fechamento da tag "footer"(rodapé)-->   
     </footer>

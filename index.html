@@ -25,7 +25,7 @@
     <!--Título que aparecerá na aba-->
     <title>Quiz para Programadores</title>
 
-    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
 
 <!--Fechamento obrigatório da tag HEAD(cabeça)-->
 </head>
@@ -85,25 +85,25 @@
                 <input type="radio" value="Python" id="q1a" name="pergunta1"> 
                 
                 <!--Nome descrito no input não aparece para o usuário, precisa adicionar um linha com a tag "label"-->
-                <label for="q1a">Python<br></label>
+                <label for="q1a">Python</label>
 
                 <!--Essas linhas de input representa o link com a lógica a ser implementada no backend-->
                 <input type="radio" value="HTML" id="q1b" name="pergunta1">
 
                 <!--Nome descrito no input não aparece para o usuário, precisa adicionar um linha com a tag "label"-->
-                <label for="q1b">HTML<br></label>
+                <label for="q1b">HTML</label>
 
                 <!--Essas linhas de input representa o link com a lógica a ser implementada no backend-->
                 <input type="radio" value="C++" id="q1c" name="pergunta1">
 
                 <!--Nome descrito no input não aparece para o usuário, precisa adicionar um linha com a tag "label"-->
-                <label for="q1c">C++<br></label>
+                <label for="q1c">C++</label>
 
                 <!--Essas linhas de input representa o link com a lógica a ser implementada no backend-->
                 <input type="radio" value="JavaScript" id="q1d" name="pergunta1">
 
                 <!--Nome descrito no input não aparece para o usuário, precisa adicionar um linha com a tag "label"-->
-                <label for="q1d">JavaScript<br></label>
+                <label for="q1d">JavaScript</label>
 
             <!--Fechamento da tag "Form"-->
             </form>
@@ -116,7 +116,7 @@
             <h3>Questão 2: Na URL HTPPS://www.google.com, o trecho "google.com" é conhecido como: </h3>
             <form>
             
-            <label for="q2">Resposta:</label>
+            <label for="q2" class="texto-formato">Resposta:</label>
             <!-- Quando o "type" é "text" você não precisa colocar o "value" -->
             <!-- DICA "placeholder" pode ser o "label" do "text" -->
             <input type="text" id="q2" name="pergunta2" placeholder="Digite aqui" size="30" />
@@ -129,7 +129,7 @@
             <h3>Questão 3: Escreva um exemplo de senha segura: </h3>
             <form>
             
-            <label for="q3">Resposta:</label>
+            <label for="q3" class="texto-formato">Resposta:</label>
             <!-- Quando o "type" é "text" você não precisa colocar o "value" -->
             <!-- DICA "placeholder" pode ser o "label" do "text" -->
             <input type="password" id="q3" name="pergunta3" placeholder="Digite aqui" />
@@ -142,7 +142,7 @@
             <h3>Questão 4: Em que ano o HTML foi lançado? </h3>
             <form>
             
-            <label for="q4">Resposta:</label>
+            <label for="q4" class="texto-formato">Resposta:</label>
             <!-- Quando o "type" é "text" você não precisa colocar o "value" -->
             <!-- DICA "placeholder" pode ser o "label" do "text" -->
             <input type="date" id="q4" name="pergunta4" />
@@ -159,16 +159,16 @@
             <!-- DICA "placeholder" pode ser o "label" do "text" -->
             
             <input type="checkbox" id="q5a" name="pergunta5" value="HTML"/>
-            <label for="q5a">HTML<br></label>
+            <label for="q5a">HTML</label>
 
             <input type="checkbox" id="q5b" name="pergunta5" value="C++"/>
-            <label for="q5b">C++<br></label>
+            <label for="q5b">C++</label>
 
             <input type="checkbox" id="q5c" name="pergunta5" value="JavaScript"/>
-            <label for="q5c">JavaScript<br></label>
+            <label for="q5c">JavaScript</label>
 
             <input type="checkbox" id="q5d" name="pergunta5" value="Python"/>
-            <label for="q5d">Python<br></label>
+            <label for="q5d">Python</label>
             
             </form>
         </section><hr>
@@ -210,7 +210,7 @@
             <h3>Questão 8: Qual linguagem de programação é representada pela logotipo abaixo: </h3>
 
             <figure id="img_q8">
-                <img src="/assets/java.png" alt="Imagem do logotipo da imagem de programação que tem um xícara.">
+                <img src="../assets/java.png" alt="Imagem do logotipo da imagem de programação que tem um xícara.">
                 <figcaption>Figura 1 - Logotipo da Linguagem de Programação</figcaption>
             </figure>
             <form>
@@ -241,7 +241,7 @@
             <!--Monta a estrutura de uma tabela-->
             <table>
                 <thead>
-                    <tr>
+                    <tr class="cabecalho-tabela">
                         <!--A tag TH (table header) cabeçalho da tabela. Coloca em negrito-->
                         <th> Pontuação</th><th> Descrição</th>
                     </tr>
@@ -306,12 +306,14 @@
                 <!--Tag Fildset é usada para agrupar logicamente campos relacionados dentro de um formulário, criando uma borda visual ao redor deles.-->
                 <fieldset>
                     <legend><b>Informações de contato: </b></legend>
-                    <label for="feed_name">Informe seu nome: </label>
+                    <label for="feed_name" class="texto-formato">Informe seu nome: </label>
                     <input type="text" id="fnome" name="feed_name" placeholder="Digite aqui..."><br><br>
-                    <label for="feed_email">Informe seu email: </label>
+                    <label for="feed_email" class="texto-formato">Informe seu email: </label>
                     <input type="email" id="femail" name="feed_email" placeholder="Digite aqui..."><br><br>
-                    <label for="comentario"><b>Comentários:</b></label><br>
+                    <label for="comentario" id="feedback-contato"><b>Comentários:</b></label><br>
                     <textarea name="comentario" id="cmt" placeholder="Seu comentário aqui..." rows="4" cols="50"></textarea>
+                    <br>
+                    <button type="submit" onclick="alert('Feedback enviado com sucesso!!')">Enviar Formulário</button>
                 </fieldset>
             </form>
         </section>

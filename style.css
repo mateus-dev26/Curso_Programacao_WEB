@@ -1,6 +1,6 @@
 
 body {
-    background-image: url(/assets/fundo);
+    background-image: url(../assets/fundo);
     text-align: justify;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -10,6 +10,16 @@ body h3 {
     font-weight: bold;
 }
 
+section.introducao p:hover{
+    transform: scale(1.05);
+    background-color: rgba(243, 242, 242, 0.185);
+    border-radius: 1rem;
+} 
+
+input[type=text] , input[type=password], input[type=email] {
+    padding: 0.2rem;
+    width: 50%;
+}
 
 header#cabecalho h1 {
     box-shadow: 0.1rem 0.1rem 0.3rem black;
@@ -23,14 +33,18 @@ header#cabecalho h1 {
     left: 15rem;
     font-size: 20pt;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    filter: drop-shadow(0 0 10px #fff);
+
 }
 section {
     margin-top: 2rem;
+    
 }
 section.introducao p{
     padding: 1rem;
     text-align: justify;
     font-size: 11pt;
+    filter: drop-shadow(0.1rem 0.0rem 0.20rem #fff);
 }
 section h2 {
     box-shadow: 0.1rem 0.1rem 0.3rem black;
@@ -42,28 +56,43 @@ section h2 {
 
 section h3 {
     box-shadow: 0.1rem 0.1rem 0.3rem black;
-    width: 49rem;
+    width: 48rem;
+    white-space: nowrap;
+    overflow: hidden;
     text-align: left;
     background-color: rgba(243, 242, 242, 0.781);
-    padding: 0.3rem;
+    padding: 0.1rem;
     
 }
 
 header#cabecalho p {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    position: relative;
+    font-family:monospace;
+    overflow: hidden;
+    padding: -0.02rem;
+    border-right: 0.4rem solid;
     top: 0.8rem;
     left: 19rem;
-    width: 30rem;
-    height: 1.2rem;
+    width: 75ch;
+    height: 1rem;
     background-color: #00000070;
     font-size: 10pt;
-    text-align: center;
+    text-align: left;
     margin-right: 1rem;
     color: #09fa01ee;
-    padding: 0.1rem;
+    animation: typing 8s steps(68), blinking 0.5s infinite step-end alternate;
+    animation-iteration-count: infinite;
 }
 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
 
 table {
     background-color: #ffff;
@@ -74,6 +103,17 @@ table {
 
     
 }
+
+label:hover {
+    display:inline-flex;
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
+thead {
+    text-align: center;
+}
+
 table, th, td {
     border: 0.1rem solid black;
     padding: 0.3rem;
@@ -92,7 +132,11 @@ article {
     border-radius: 0.5rem;
 }
 
-
+details {
+    background-color: rgba(243, 242, 242, 0.185);
+    padding: 1rem;
+    border-radius: 2rem;
+}
 
 header#cabecalho {
     text-align: left;
@@ -102,8 +146,23 @@ fieldset {
     background-color: rgba(243, 242, 242, 0.185);
 }
 
+legend {
+    padding: 1rem;
+}
+
 footer {
     text-align: right;
+}
+form label.texto-formato {
+    margin-right: .5rem;
+}
+form label#feedback-contato {
+    margin-right: .5rem;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+}
+form label{
+    margin-right: 3rem;
 }
 
 figcaption {
@@ -111,6 +170,8 @@ figcaption {
     width: 46rem;
     font-size: 10pt;
     margin-top: 1rem;
+    font-weight: bold;
+    font-style: italic;
 }
 
 figure#img_q8 img {
@@ -121,4 +182,26 @@ figure#img_q8 img {
     position: relative;
     left: 10rem;
     background-color: #ffff;
+}
+
+button {
+    padding: 0.3rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    display: block;
+    position: relative;
+    width: 8rem;
+    float: right;
+    right: 5rem;
+    bottom: 2rem;
+    text-align: center;
+    color: black;
+    background-color: #606060;
+    font-size: 18pt;
+    border-radius: 2rem;
+}
+footer a:hover {
+    color: blue;
 }
